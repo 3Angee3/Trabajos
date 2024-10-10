@@ -1,0 +1,315 @@
+:root{
+    --primario: #5d3c64; 
+    --secundario: #edcdf8;
+    --colorfondo: hsl(293, 67%, 87%);
+    --colortodo: #d7a8c4;
+
+    /*Color de cjaa*/
+    --co1: #A56DB9;
+    --col2: #bf98d5;
+
+    
+    /*Colores neutros*/
+    --blanco: #ffffff; 
+    --obscuro: #000000; 
+    --gris: #F6F6F6;
+    --fuente-principal: 3.8rem;
+}
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherits;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Work Sans';
+    background-image: linear-gradient(to top, var(--gris) 10%, var(--colortodo) 100%); /*Degradap en la pagina y con to top para que lo garre de arriva hacaa abajo */
+
+}
+
+
+h1 {
+    text-align: center;
+    color: var(--blanco);
+    font-size: 5rem; /* 10px = 1rem*/
+}
+h2 {
+    text-align: center;
+    color: var(--blanco);
+}
+h3 {
+    color: var(--blanco);
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+p{
+    color: rgb(0, 0, 0);
+}
+
+/*uso class en el html para el estilo*/
+.titulo {
+    text-align: center;
+    color: var(--primario);
+    font-size: var(--fuente-principal);  
+    font-family: 'krub', Arial, Helvetica, sans-serif; /*fUENTES DE LAPAGINA*/
+}
+
+.secun{
+    display: grid; /*permite orgnizar los bloques de parrafo como yo quiera*/
+}
+.secun{
+    flex: 1;
+    width: 800px; /* Ancho de la caja */
+    height: 400px; /* Altura de la caja */
+    border: 2px solid black; /* Borde de la caja- color*/
+    border-radius: 15px;
+    padding: 20px; /* Espacio interno*/
+    margin: 20px; /* Espacio externo del lienado*/
+    background: linear-gradient(to right, #511F52,#8f499d);
+    
+}
+
+.secun p, li{
+    font-weight: bold;
+    color: var(--blanco);  
+    text-align: left;
+    padding: auto;
+    font-size: 1.3rem;
+}
+
+.pequeñacaja p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.iconos{
+    height: 5rem;
+    width: 5rem;
+    background-color: var(--secundario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+/*-------------------------------------*/
+
+.image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid black; /* Borde de la caja- color*/
+    margin: 10px; /* Añade margen alrededor de la imagen */
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgb(0, 0, 0.5);
+}
+    
+.image:hover{
+    transform: scale(1.2);/*Acerca la imagen*/
+}
+
+.contenedorCaja {
+    display: flex;
+    justify-content: flex-end; /* Alinea la caja a la derecha */
+    align-items: flex-start; /* Alinea la caja hacia arriba */
+    height: 100vh; /* Altura completa de la ventana*/
+    
+}
+
+.caja {
+    flex: 1;/*Alinea el contenido dependiedo en donde se encuentre*/
+    width: 800px; /* Ancho de la caja */
+    height: 300px; /* Altura de la caja */
+    border: 2px solid black; /* Borde de la caja- color*/
+    border-radius: 15px;
+    padding: 20px; /* Espacio interno*/
+    margin: 20px; /* Espacio externo del lienado*/
+    background: linear-gradient(to right, #511F52,#b091ba);
+
+}
+.pequeñacaja{
+    width: 800px;
+    height: 180px;
+    background-color: var(--blanco);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.principal{
+    display: flex;
+    justify-content: flex-end; /* Alinea la caja a la derecha */
+    align-items: flex-start; /* Alinea la caja hacia arriba */
+    height: 100vh; /* Altura completa de la ventana*/
+    
+}
+
+.caja2{
+    flex: 1;
+    width: 800px; /* Ancho de la caja */
+    height: 400px; /* Altura de la caja */
+    border: 2px solid black; /* Borde de la caja- color*/
+    border-radius: 15px;
+    padding: 20px; /* Espacio interno*/
+    margin: 20px; /* Espacio externo del lienado*/
+    background: linear-gradient(to right, #8f499d,#b091ba);
+
+    text-align: left; /* Alinea el texto a la derecha */
+       /* Cambia el color del texto a negro */
+}
+.caja2 p, li{
+    font-weight: bold;
+    color: var(--blanco);
+    padding: auto;  
+    font-size: 1.3rem;
+}
+
+
+.caja2 ul {
+    list-style-type: disc; /* Asegura que los puntos de la lista sean visibles*/
+    padding-left: 20px;    /* Añade un poco de padding a la izquierda para los puntos*/
+}
+
+.caja3{
+    flex: 1;
+    width: 800px; /* Ancho de la caja */
+    height: 400px; /* Altura de la caja */
+    border: 2px solid black; /* Borde de la caja- color*/
+    border-radius: 15px;
+    padding: 20px; /* Espacio interno*/
+    margin: 20px; /* Espacio externo del lienado*/
+    background: linear-gradient(to right, #b091ba,#dfcaf1);
+}
+.caja3 p{
+    color: var(--blanco); 
+    font-weight: bold; 
+    text-align: left;
+}
+.principal{
+     background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+/*Estilo de las imagenes*/
+.galeria{
+    margin: auto;/*Alineacion en el centro*/
+    display: flex;
+    width: 800px;
+    height: 300px;
+    border-radius: 0px;
+    border: 2px solid black;
+}
+
+.galeria img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: brightness(80%);
+    transition: .7s ease; 
+}
+
+.galeria img:hover{
+    width: 500px;
+    opacity: 1;
+    filter: brightness(130%);
+}
+
+.dia{
+    margin: auto;
+    align-items: center;
+}
+.dia h2{
+    margin: center;
+    color: var(--obscuro);
+}
+
+/*icono decoracion*/
+/* styles.css */
+.nameIcon h2{
+    color: #000000;
+}
+a{
+    flex: 1;
+    margin: auto;
+    border-radius: 50%;
+    box-sizing: border-box;/*Ancho y controla el aumento :)*/
+    background: var(--blanco);
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;/*Centra el elemento de icon*/
+    text-decoration: none;/*Quita decoracion de texto*/
+    transition: 0.5s;
+    background: rgb(0, 0, 0, 0);
+    color: var(--primario);
+}
+
+a:hover{
+    background: var(--color);
+    color: #050801;/*Al cambiar el color del icono es negro*/
+    box-shadow: 0 0 5px var(--color), 
+        0 0 25px var(--color),
+        0 0 50px var(--color),
+        0 0 200px var(--color);
+}
+
+
+/*Media query, es para definir el color segun la pantalla de los dispositivos*/
+@media (min-width: 480px) {
+    
+}
+
+@media (max-width: 600px) {
+    .contenedorCaja {
+        flex-direction: column; /* Cambia la dirección a columna*/
+        align-items: center; /* Centra la caja horizontalmente */
+    }
+    .imagen {
+        margin-right: 0; /* Elimina el margen derecho */
+        margin-bottom: 20px; /* Añade margen inferior para separación */
+    }
+    .caja {
+        width: 100%; /* Ancho completo en pantallas pequeñas*/
+        margin-top: 20px; /* Añade margen superior para separación */
+        font-size: var(--fuente-principal);
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+    flex-direction: row;
+    }
+    .boton{
+        width: auto; /*acomodar el boton segun el diseño responsivo*/
+    }
+    .servicios{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+}
+@media (min-width: 1020px) {
+    
+}
+
+@media (min-width: 1120px) {
+
+}
+
